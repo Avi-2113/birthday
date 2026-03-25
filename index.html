@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Nandini 🎉</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating hearts background animation -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <!-- Section 1: Landing Section -->
+    <section class="landing-section" id="landing">
+        <div class="landing-content">
+            <h1 class="main-heading">
+                Happy Birthday<br>
+                <span class="name-highlight">Nandini</span> 🎉
+            </h1>
+            <p class="subtext">I made something special for you 💖</p>
+            <button class="start-btn" onclick="scrollToSection('message')">
+                Start
+                <span class="btn-glow"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section 2: Personal Message Section -->
+    <section class="message-section" id="message">
+        <div class="glass-card">
+            <h2 class="section-title">A Message For You 💌</h2>
+            <p class="typing-text" id="typingText"></p>
+        </div>
+        <button class="scroll-btn" onclick="scrollToSection('memories')">Next →</button>
+    </section>
+
+    <!-- Section 3: Memories Section -->
+    <section class="memories-section" id="memories">
+        <h2 class="section-title glow-text">Our Memories 📸</h2>
+        <div class="memories-grid">
+            <!-- Memory Card 1 -->
+            <!-- Replace the src with your actual image URL -->
+            <div class="memory-card">
+                <div class="image-container">
+                    <img src="./beauty.jpeg" alt="Memory 1">
+                </div>
+                <p class="memory-caption">That unforgettable day ✨</p>
+            </div>
+
+            <!-- Memory Card 2 -->
+            <!-- Replace the src with your actual image URL -->
+            <div class="memory-card">
+                <div class="image-container">
+                    <img src="./lib2.jpeg" alt="Memory 2">
+                </div>
+                <p class="memory-caption">Best moment ever 🌟</p>
+            </div>
+
+            <!-- Memory Card 3 -->
+            <!-- Replace the src with your actual image URL -->
+            <div class="memory-card">
+                <div class="image-container">
+                    <img src="./ferrari_jacket.jpeg" alt="Memory 3">
+                </div>
+                <p class="memory-caption">Crazy adventures 🎈</p>
+            </div>
+
+            <!-- Memory Card 4 -->
+            <!-- Replace the src with your actual image URL -->
+            <div class="memory-card">
+                <div class="image-container">
+                    <img src="./morning.jpeg" alt="Memory 4">
+                </div>
+                <p class="memory-caption">Laughs & good times 😄</p>
+            </div>
+
+            <!-- Memory Card 5 -->
+            <!-- Replace the src with your actual image URL -->
+            <div class="memory-card">
+                <div class="image-container">
+                    <img src="./Memories.jpeg" alt="Memory 5">
+                </div>
+                <p class="memory-caption">Forever in my heart 💕</p>
+            </div>
+
+            <!-- Memory Card 6 -->
+            <!-- Replace the src with your actual image URL -->
+            <div class="memory-card">
+                <div class="image-container">
+                    <img src="./hehe.jpeg" alt="Memory 6">
+                </div>
+                <p class="memory-caption">The golden memories 🌈</p>
+            </div>
+        </div>
+        <button class="scroll-btn" onclick="scrollToSection('surprise')">Next →</button>
+    </section>
+
+    <!-- Section 4: Fun Interaction Section -->
+    <section class="surprise-section" id="surprise">
+        <div class="glass-card surprise-card">
+            <h2 class="section-title">Ready for a Surprise? 🎁</h2>
+            <button class="surprise-btn" id="surpriseBtn">
+                Click for Surprise
+                <span class="btn-sparkle"></span>
+            </button>
+            
+            <!-- Hidden message that appears on click -->
+            <div class="hidden-message" id="hiddenMessage">
+                <h3>✨ You're Amazing! ✨</h3>
+                <p>
+                    Happy Birthday Nandini! 🎂
+                    It’s been 6–7 years of friendship, and honestly, having you around has always made things better. You bring such a positive vibe wherever you go, and your smile can literally brighten any day.
+                    I’m really lucky to have a friend like you. I hope this year brings you lots of happiness, success, and all the good things you truly deserve.
+                    Stay the same amazing person you are, and keep smiling always ✨
+                    🌟💖
+                </p>
+            </div>
+        </div>
+        <button class="scroll-btn" onclick="scrollToSection('final')">Next →</button>
+    </section>
+
+    <!-- Section 5: Final Section -->
+    <section class="final-section" id="final">
+        <div class="final-content">
+            <h1 class="final-heading glow-text">
+                Happy Birthday<br>
+                Once Again 🎂
+            </h1>
+            <div class="glass-card final-message">
+                <p>
+                    Thank you for being such an incredible friend. 
+                    Your presence makes life more beautiful, and I'm so grateful to have you in my life. 
+                    Here's to many more years of laughter, adventures, and unforgettable memories together!
+                </p>
+                <p class="signature">With love always 💕</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
